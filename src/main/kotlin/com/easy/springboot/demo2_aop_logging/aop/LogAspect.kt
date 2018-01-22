@@ -17,6 +17,7 @@ class LogAspect {
 
     @Pointcut("execution(public * com.easy.springboot.demo2_aop_logging.controller.*.*(..))") //.*.*代表所有子目录下的所有方法，最后括号里(..)的两个..代表所有参数
     fun logPointCut() {
+
     }
 
     @Before("logPointCut()")
